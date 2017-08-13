@@ -1,0 +1,31 @@
+DOCKERIZED CSOUND
+
+  A dockerized Csound 6.08 executable.
+
+BUILD IMAGE
+
+  make
+
+  or
+
+  make build
+
+INSTALL EXECUTABLE
+
+  make install
+
+USAGE
+
+  First, add these lines to your .bashrc to ensure ~/bin is in your PATH:
+
+    if ! echo "${PATH}" | grep -Eq "(^|:)${HOME}/bin(:|$)"; then
+      export PATH=${HOME}/bin:${PATH}
+    fi
+
+  Then...
+
+    csound [-flags] orchfile scorefile
+
+UNINSTALL EXECUTABLE
+
+  make uninstall
