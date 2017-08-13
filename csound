@@ -1,0 +1,10 @@
+#!/bin/bash
+
+docker run \
+  --interactive \
+  --tty \
+  --rm \
+  --volume "${PWD}:/home/csound/project" \
+  --workdir /home/csound/project \
+  eightycolumns/csound:6.08 \
+  "$@"
